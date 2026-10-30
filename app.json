@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "OfficeRangerCompanion",
+    "slug": "expo-bio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/systems/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ranger.companion",
+      "buildNumber": "3",
+      "userInterfaceStyle": "light"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/systems/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.ranger.companion",
+      "userInterfaceStyle": "light"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/systems/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/systems/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Cho phép $(PRODUCT_NAME) truy cập thư viện ảnh để chọn ảnh đại diện",
+          "cameraPermission": "Cho phép $(PRODUCT_NAME) truy cập máy ảnh để chụp ảnh đại diện"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Cho phép $(PRODUCT_NAME) dùng vị trí để ghi lộ trình tuần tra và điểm kiểm tra."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
